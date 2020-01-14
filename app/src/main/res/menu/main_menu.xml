@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_height="3dp" android:layout_width="3dp">
+
+<item
+    android:id="@+id/action_add_task"
+    android:iconTint="@color/colorAccent"
+    android:title="Dodaj film do obejrzenia"
+    app:showAsAction="never" />
+<item
+    android:id="@+id/obejrzane"
+    android:iconTint="@color/colorAccent"
+    android:title="Wyświetl obejrzane filmy"
+    app:showAsAction="never" />
+
+ <item
+     android:id="@+id/ranking_lista"
+     android:iconTint="@color/colorAccent"
+     android:title="Wyświetl najwyżej oceniane filmy"
+     app:showAsAction="never" />
+
+</menu>

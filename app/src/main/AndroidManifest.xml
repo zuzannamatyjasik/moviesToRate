@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moviestorate">
+
+    <application
+        android:allowBackup="true"
+        android:background="@color/white"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Filmy"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ranking"></activity>
+        <activity android:name=".ranking_lista"
+            android:label="Twoje najwyżej oceniane filmy"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".movie_watched" />
+        <activity
+            android:name=".obejrzane"
+            android:label="Twoje obejrzane filmy"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

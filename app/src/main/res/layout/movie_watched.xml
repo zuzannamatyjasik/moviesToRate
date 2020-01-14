@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_vertical"
+
+    >
+
+    <Button
+        android:id="@+id/deleteTask"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#ff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:onClick="deleteTask"
+        android:text="Usuń" />
+
+    <TextView
+        android:id="@id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ocena"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="12dp"
+        android:text="Hello"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textFontWeight="@android:integer/config_mediumAnimTime"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:id="@+id/edytujto"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="showEdytuj"
+        android:text="Zapisz" />
+
+    <RatingBar
+        android:id="@+id/ocena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edytujto"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="14dp"
+        android:isIndicator="false"
+        android:numStars="5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ocena"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="370dp"
+        android:text="@string/opis" />
+
+    <EditText
+        android:id="@+id/opis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:clickable="false"
+        android:inputType="textMultiLine"
+        android:isIndicator="false"
+        android:lines="3"
+        android:text=" "
+        android:background="@null"
+        android:layout_marginStart="12dp"
+        />
+
+
+</RelativeLayout>

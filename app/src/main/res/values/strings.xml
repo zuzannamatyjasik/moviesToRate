@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">moviesToRate</string>
+    <string name="opis">Opis</string>
+    <color name="white">#f9ecec</color>
+</resources>
